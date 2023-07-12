@@ -13,7 +13,7 @@ type Result struct {
 	Msg  string      `json:"msg"`
 }
 
-// Response 统一输出响应
+// Response 统一处理 HTTP 响应
 func Response(c *gin.Context, err error, resp interface{}) {
 
 	httpCode := 200

@@ -1,5 +1,10 @@
 package dao_impl
 
+/* 数据库的操作和业务进行分离
+
+业务仅依赖 dao 接口,这里是基于 Redis 实现的 dao_impl，也可以基于其他任意数据库实现，MySQL Oracle
+*/
+
 import (
 	"WebService/dal/do"
 	"WebService/dal/driver/rdb"
